@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboHash Image Generator</title>
+</head>
+<body>
+    <h1>Generate a unique image with RoboHash</h1>
+    <form action="/generate-image" method="get">
+        <input type="text" name="text" placeholder="Enter text here" required>
+        <button type="submit">Generate Image</button>
+    </form>
+    <% if (imageUrl) { %>
+        <img src="<%= imageUrl %>" alt="Generated Image">
+    <% } %>
+</body>
+</html>
